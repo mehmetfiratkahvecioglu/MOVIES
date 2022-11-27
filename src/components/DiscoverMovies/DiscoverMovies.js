@@ -17,7 +17,7 @@ const DiscoverMovies = () => {
       );
 
       let PosterImagesForSlider = [];
-      for (let i = 0; i < 10; i++) {
+      for (let i = 2; i < 12; i++) {
         PosterImagesForSlider = [...PosterImagesForSlider, apiImages[i]];
       }
       setImages(PosterImagesForSlider);
@@ -26,8 +26,7 @@ const DiscoverMovies = () => {
   }, []);
 
   return (
-    <View style={{backgroundColor: 'red'}}>
-      <Text>DiscoverMovies</Text>
+    <View>
       <SliderBox images={images} />
     </View>
   );
