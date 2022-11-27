@@ -15,6 +15,7 @@ const App = () => {
       <Text>App</Text>
       <Icon name="rocket" size={30} color="#900" />
       <SliderBox images={images} />
+      <Text>version 2</Text>
     </View>
   );
 };
