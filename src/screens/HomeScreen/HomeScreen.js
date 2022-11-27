@@ -2,7 +2,7 @@ import {View, Text} from 'react-native';
 import React from 'react';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import {SliderBox} from 'react-native-image-slider-box';
-
+import DiscoverMovies from '../../components/DiscoverMovies';
 const HomeScreen = () => {
   const images = [
     'https://images.unsplash.com/photo-1591448764624-d7973a442bff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80',
@@ -16,6 +16,7 @@ const HomeScreen = () => {
       <Icon name="rocket" size={30} color="#900" />
       <SliderBox images={images} />
       <Text>version 2</Text>
+      <DiscoverMovies />
     </View>
   );
 };
